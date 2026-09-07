@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Have A Surprise 💌</title>
+
+<style>
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #bdefff, #e8f9ff);
+    overflow: hidden;
+}
+
+.card {
+    width: 85%;
+    max-width: 430px;
+    padding: 45px 25px;
+    text-align: center;
+    background: rgba(255,255,255,0.85);
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(0,100,150,0.2);
+}
+
+h1 {
+    color: #087ca8;
+    font-size: 32px;
+}
+
+p {
+    color: #4388a5;
+    font-size: 20px;
+}
+
+button {
+    margin-top: 25px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    background: #36aee0;
+    color: white;
+    font-size: 20px;
+}
+
+.heart {
+    position: fixed;
+    font-size: 28px;
+    animation: float 5s infinite;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="heart" style="left:10%;">💙</div>
+<div class="heart" style="left:80%; animation-delay:2s;">💙</div>
+
+<div class="card">
+
+    <h1>💌 I HAVE A SURPRISE FOR YOU</h1>
+
+    <p>Something very special is waiting for you... 🪐✨</p>
+
+    <a href="page3.html">
+        <button>Open → 💙</button>
+    </a>
+
+</div>
+
+</body>
+</html>

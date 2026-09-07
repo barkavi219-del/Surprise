@@ -1,10 +1,9 @@
-                <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Our Special Day 💙</title>
+<title>It's For You 💙</title>
 
 <style>
 * {
@@ -13,139 +12,82 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(180deg, #dff6ff, #87ceeb, #bdefff);
-    color: #075985;
-    text-align: center;
-    min-height: 100vh;
-    overflow-x: hidden;
-}
-
-.container {
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 25px;
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #dff6ff, #8ed8ff);
+    overflow: hidden;
+}
+
+.card {
+    text-align: center;
+    background: rgba(255,255,255,0.75);
+    padding: 50px 30px;
+    width: 90%;
+    max-width: 420px;
+    border-radius: 30px;
+    box-shadow: 0 10px 35px rgba(0,100,160,0.2);
 }
 
 h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
-    color: #0369a1;
+    color: #087bb5;
+    font-size: 38px;
 }
 
-.subtitle {
+p {
+    color: #398bb5;
     font-size: 20px;
-    color: #075985;
-    margin-bottom: 25px;
-}
-
-.photo {
-    width: 280px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 25px;
-    border: 6px solid white;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-    margin: 15px 0;
-}
-
-.message {
-    max-width: 600px;
-    font-size: 19px;
-    line-height: 1.7;
-    color: #164e63;
-    background: rgba(255,255,255,0.65);
-    padding: 20px;
-    border-radius: 20px;
-    margin-top: 20px;
 }
 
 button {
-    margin-top: 20px;
-    padding: 14px 30px;
     border: none;
-    border-radius: 30px;
-    background: #0284c7;
+    background: #38aee8;
     color: white;
+    padding: 15px 35px;
+    border-radius: 30px;
     font-size: 18px;
     cursor: pointer;
 }
 
-button:hover {
-    background: #0369a1;
+button:active {
+    transform: scale(0.95);
 }
 
 .heart {
-    font-size: 30px;
-    margin: 10px;
+    position: fixed;
+    font-size: 25px;
+    animation: float 5s linear infinite;
+    opacity: 0.7;
 }
 
-footer {
-    margin-top: 25px;
-    font-size: 15px;
-    color: #075985;
+@keyframes float {
+    0% {
+        transform: translateY(100vh);
+    }
+    100% {
+        transform: translateY(-10vh);
+    }
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="heart" style="left:10%; animation-delay:1s;">💙</div>
+<div class="heart" style="left:30%; animation-delay:3s;">🩵</div>
+<div class="heart" style="left:60%; animation-delay:0s;">💙</div>
+<div class="heart" style="left:85%; animation-delay:2s;">🩵</div>
 
-    <div class="heart">💙 💙 💙</div>
+<div class="card">
+    <h1>💙 IT'S FOR YOU</h1>
+    <p>Something special is waiting for you... ✨</p>
 
-    <h1>Happy Anniversary! 💙</h1>
-
-    <div class="subtitle">
-        A Little Surprise For You ✨
-    </div>
-
-    <!-- YOUR PHOTO -->
-    <img src="photo.jpg" class="photo" alt="Our Special Photo">
-
-    <div class="message">
-        <p>
-            To the two most special people in my life 💙
-        </p>
-
-        <p>
-            Your love, care and togetherness make our family
-            beautiful every single day.
-        </p>
-
-        <p>
-            Wishing you both a very Happy Anniversary! 💐
-        </p>
-
-        <p>
-            Stay happy, stay blessed and keep smiling always. 💙
-        </p>
-    </div>
-
-    <!-- MUSIC -->
-    <audio id="music" loop>
-        <source src="music.mp3" type="audio/mpeg">
-    </audio>
-
-    <button onclick="playMusic()">
-        🎵 Play Music
+    <button onclick="location.href='page2.html'">
+        Touch to open 💙
     </button>
-
-    <footer>
-        Made with lots of love 💙✨
-    </footer>
-
 </div>
-
-<script>
-function playMusic() {
-    const music = document.getElementById("music");
-    music.play();
-}
-</script>
 
 </body>
 </html>

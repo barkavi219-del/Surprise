@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dear Husband 💙</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #e8f8ff, #9ddff8);
+    padding: 25px 10px;
+    overflow-x: hidden;
+}
+
+.letter {
+    max-width: 700px;
+    margin: auto;
+    background: rgba(255,255,255,0.94);
+    padding: 35px 25px;
+    border-radius: 25px;
+    box-shadow: 0 10px 40px rgba(0,100,160,0.2);
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    text-align: center;
+    color: #087bb5;
+    font-size: 36px;
+}
+
+.line {
+    width: 130px;
+    height: 3px;
+    background: #55bce8;
+    margin: 10px auto 30px;
+}
+
+.letter p {
+    color: #176d98;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.signature {
+    text-align: right;
+    color: #087bb5;
+    font-size: 22px;
+    font-style: italic;
+    margin-top: 30px;
+}
+
+.music-box {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.music-box button {
+    border: none;
+    background: #38aee8;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 25px;
+    font-size: 17px;
+}
+
+.float {
+    position: fixed;
+    bottom: -50px;
+    font-size: 25px;
+    animation: floatUp 7s linear infinite;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Floating cute animations -->
+<div class="float" style="left:5%; animation-delay:0s;">🩵</div>
+<div class="float" style="left:20%; animation-delay:2s;">💙</div>
+<div class="float" style="left:40%; animation-delay:4s;">✨</div>
+<div class="float" style="left:65%; animation-delay:1s;">🪐</div>
+<div class="float" style="left:85%; animation-delay:3s;">💙</div>
+
+<div class="letter">
+
+    <h1>Dear Husband 💙</h1>
+
+    <div class="line"></div>
+
+    <p>
+        Hii, this is your future wife talking. 🩵
+    </p>
+
+    <p>
+        Do you remember when we first started talking?
+        October 3, 2023, in the evening, around 6 PM.
+        You sent me your first “Hi,” and the moment I saw it,
+        I had a reaction on my face that I couldn’t even express. 🪐✨
+    </p>
+
+    <p>
+        From that day until now, we’ve always shared the same
+        beautiful bond. You are my first love, and I will never
+        leave you for anyone or anything. 🪐💙
+    </p>
+
+    <p>
+        From then until now, you have always looked so beautiful
+        to me, and I hope we stay happy together just like this
+        forever. 🪐✨
+    </p>
+
+    <p>
+        Our first hug, our first kiss, and all those unforgettable
+        moments will always be some of the best memories of my life.
+        And our tour memories, especially Wonderla, are truly some
+        of the best memories I have ever made with you. 🪐💙
+    </p>
+
+    <p>
+        Thank you so much, darling, for being a part of my life.
+        I love you moreee, and I miss you so much. 🪐💙
+    </p>
+
+    <div class="signature">
+        – My Loyal Man 💙🪐
+    </div>
+
+    <!-- MUSIC -->
+    <div class="music-box">
+
+        <button onclick="playMusic()">
+            🎵 Play Our Song 🩵
+        </button>
+
+        <audio id="music" loop>
+            <source src="music.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+
+</div>
+
+<script>
+
+function playMusic() {
+    const music = document.getElementById("music");
+
+    if (music.paused) {
+        music.play();
+    } else {
+        music.pause();
+    }
+}
+
+</script>
+
+</body>
+  </html>

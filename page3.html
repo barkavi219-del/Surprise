@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Little Hug 🤗</title>
+
+<style>
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #bdefff, #e8f9ff);
+    overflow: hidden;
+}
+
+.card {
+    width: 85%;
+    max-width: 430px;
+    padding: 50px 25px;
+    text-align: center;
+    background: rgba(255,255,255,0.88);
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(0,100,150,0.2);
+}
+
+.hug {
+    font-size: 100px;
+    animation: hug 1.5s infinite alternate;
+}
+
+@keyframes hug {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.15);
+    }
+}
+
+h1 {
+    color: #087ca8;
+}
+
+p {
+    color: #4388a5;
+    font-size: 20px;
+}
+
+button {
+    margin-top: 25px;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 30px;
+    background: #36aee0;
+    color: white;
+    font-size: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="hug">🤗</div>
+
+    <h1>Little Hug 🩵</h1>
+
+    <p>A little virtual hug just for you...</p>
+
+    <a href="page4.html">
+        <button>Next → 💙</button>
+    </a>
+
+</div>
+
+</body>
+</html>

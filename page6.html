@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Love Story 🎬</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Georgia, serif;
+
+    background: linear-gradient(
+        135deg,
+        #bdefff,
+        #eafaff
+    );
+
+    overflow: hidden;
+}
+
+.movie {
+    width: 90%;
+    max-width: 450px;
+
+    text-align: center;
+}
+
+.scene {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: showScene 2s forwards;
+}
+
+.scene1 {
+    animation-delay: 0s;
+}
+
+.scene2 {
+    animation-delay: 3s;
+}
+
+.scene3 {
+    animation-delay: 6s;
+}
+
+.scene4 {
+    animation-delay: 9s;
+}
+
+h1 {
+    color: #087ca8;
+    font-size: 35px;
+}
+
+h2 {
+    color: #168ab5;
+    font-size: 28px;
+}
+
+p {
+    color: #4b8da8;
+    font-size: 20px;
+}
+
+.big {
+    font-size: 45px;
+}
+
+.heart {
+    font-size: 55px;
+    animation: heartbeat 1s infinite;
+}
+
+@keyframes showScene {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    30% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+
+}
+
+@keyframes heartbeat {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.25);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+.final {
+    animation:
+        finalShow 2s forwards,
+        glow 2s infinite alternate;
+    animation-delay: 12s, 14s;
+
+    opacity: 0;
+}
+
+@keyframes finalShow {
+
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+@keyframes glow {
+
+    from {
+        text-shadow: 0 0 5px #ffffff;
+    }
+
+    to {
+        text-shadow: 0 0 25px #42bde8;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="movie">
+
+    <!-- Scene 1 -->
+
+    <div class="scene scene1">
+
+        <div class="big">🎬</div>
+
+        <h1>OUR LOVE STORY</h1>
+
+        <p>The End?</p>
+
+    </div>
+
+
+    <!-- Scene 2 -->
+
+    <div class="scene scene2">
+
+        <div class="big">❤️</div>
+
+        <h2>No...</h2>
+
+        <p>This is only the beginning.</p>
+
+    </div>
+
+
+    <!-- Scene 3 -->
+
+    <div class="scene scene3">
+
+        <div class="big">⏳</div>
+
+        <h2>Chapter 4 completed...</h2>
+
+        <p>Chapter 5 loading...</p>
+
+    </div>
+
+
+    <!-- Final Scene -->
+
+    <div class="scene scene4 final">
+
+        <div class="heart">💙</div>
+
+        <h1>HAPPY LOVE ANNIVERSARY</h1>
+
+        <h2>4 YEARS OF TOGETHERNESS 🫂♾️</h2>
+
+        <p>
+            Our story continues... ❤️
+        </p>
+
+        <div class="heart">💙</div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

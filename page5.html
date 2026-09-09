@@ -194,12 +194,25 @@ function playMusic() {
         music.pause();
     }
 }
+
+</script>
+<script>
+
+function playMusic() {
+    const music = document.getElementById("music");
+
+    if (music.paused) {
+        music.play();
+    } else {
+        music.pause();
+    }
+}
+
+</script>
 <div class="next-page">
     <a href="page6.html">
         <button>Next → 💍</button>
     </a>
 </div>
-</script>
-
 </body>
   </html>

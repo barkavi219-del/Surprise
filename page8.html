@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Forever 💙🪷</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: url("krishna.jpg") center center / cover no-repeat fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Georgia, serif;
+    overflow: hidden;
+}
+
+/* Soft blue overlay */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 60, 120, 0.18);
+    z-index: 0;
+}
+
+/* Quote box */
+.content {
+    position: relative;
+    z-index: 2;
+
+    width: 90%;
+    max-width: 650px;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    background: rgba(255,255,255,0.16);
+    backdrop-filter: blur(3px);
+
+    border-radius: 30px;
+
+    animation: appear 2s ease;
+}
+
+.quote {
+    color: white;
+
+    font-size: 30px;
+    line-height: 1.5;
+
+    font-weight: bold;
+
+    text-shadow: 0 3px 10px rgba(0,0,80,0.9);
+
+    animation: glow 2s infinite alternate;
+}
+
+.small-text {
+    margin-top: 25px;
+
+    color: white;
+    font-size: 19px;
+
+    text-shadow: 0 2px 8px rgba(0,0,80,0.9);
+}
+
+/* Floating decorations */
+.float {
+    position: fixed;
+    z-index: 3;
+
+    font-size: 28px;
+
+    animation: float 4s ease-in-out infinite;
+}
+
+.f1 {
+    left: 8%;
+    top: 20%;
+}
+
+.f2 {
+    right: 8%;
+    top: 30%;
+    animation-delay: 1s;
+}
+
+.f3 {
+    left: 12%;
+    bottom: 20%;
+    animation-delay: 2s;
+}
+
+.f4 {
+    right: 12%;
+    bottom: 18%;
+    animation-delay: 3s;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 3px 8px rgba(0,0,80,0.8);
+    }
+
+    to {
+        text-shadow: 0 0 25px white;
+    }
+}
+
+@keyframes float {
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🎵 YOUR NEW SONG -->
+<audio id="bgMusic" autoplay loop>
+    <source src="lastsong.mp3" type="audio/mpeg">
+</audio>
+
+<div class="float f1">💙</div>
+<div class="float f2">🪷</div>
+<div class="float f3">💙</div>
+<div class="float f4">🪷</div>
+
+<div class="content">
+
+    <div class="quote">
+        You are written in my destiny 🥹🫂💙🪷
+    </div>
+
+    <div class="small-text">
+        Forever written in my heart... 💙
+    </div>
+
+</div>
+
+<script>
+window.addEventListener("load", function() {
+
+    const music = document.getElementById("bgMusic");
+
+    music.volume = 0.5;
+
+    music.play().catch(function() {
+        console.log("Autoplay blocked by browser");
+    });
+
+});
+</script>
+
+</body>
+</html>

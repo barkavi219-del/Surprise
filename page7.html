@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Memories 💙</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: url("background.jpg") center center / cover no-repeat fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* Blue love-letter photo */
+
+.love-photo {
+    width: 100%;
+    max-width: 430px;
+
+    height: auto;
+
+    display: block;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 90, 150, 0.25);
+
+    animation: appear 1.5s ease;
+}
+
+/* Next button */
+
+.next-button {
+    margin-top: 22px;
+
+    padding: 13px 38px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #36aee0;
+    color: white;
+
+    font-size: 18px;
+    font-family: Georgia, serif;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px rgba(0,100,160,0.25);
+
+    animation: buttonAppear 2s ease;
+}
+
+.next-button:active {
+    transform: scale(0.95);
+}
+
+/* Animation */
+
+@keyframes appear {
+
+    from {
+        opacity: 0;
+        transform: scale(0.92);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+@keyframes buttonAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<img
+    src="loveletter-blue.jpg"
+    class="love-photo"
+    alt="Our Memories"
+>
+
+<button
+    class="next-button"
+    onclick="location.href='page8.html'">
+    Next →
+</button>
+
+</body>
+</html>

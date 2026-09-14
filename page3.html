@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Little Hug 💙</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: url("background.jpg") center center / cover no-repeat fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Georgia, serif;
+    overflow: hidden;
+}
+
+/* White card */
+
+.card {
+    width: 90%;
+    max-width: 430px;
+
+    padding: 35px 20px;
+
+    text-align: center;
+
+    background: rgba(255,255,255,0.94);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 35px rgba(0,100,160,0.25);
+
+    animation: appear 1.5s ease;
+}
+
+/* Hug image */
+
+.hug-image {
+    width: 85%;
+    max-width: 300px;
+    height: auto;
+
+    display: block;
+    margin: 0 auto 20px;
+
+    border-radius: 20px;
+
+    animation: hug 1.5s infinite alternate;
+}
+
+/* Hug animation */
+
+@keyframes hug {
+
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.08);
+    }
+
+}
+
+/* Card animation */
+
+@keyframes appear {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* Heading */
+
+h1 {
+    color: #087ca8;
+    font-size: 27px;
+    margin: 10px 0;
+}
+
+/* Text */
+
+p {
+    color: #4388a5;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Heart */
+
+.heart {
+    font-size: 35px;
+    margin-top: 15px;
+
+    animation: heartBeat 1s infinite alternate;
+}
+
+@keyframes heartBeat {
+
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+
+}
+
+/* Next button */
+
+button {
+    margin-top: 20px;
+
+    padding: 13px 30px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #5da9d6;
+
+    color: white;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <!-- Hug photo instead of hug emoji -->
+    <img
+        src="hug.jpg"
+        class="hug-image"
+        alt="Hug"
+    >
+
+    <h1>Little Hug 🫂</h1>
+
+    <p>Sending you a big warm hug 💙</p>
+
+    <div class="heart">💙</div>
+
+    <button onclick="location.href='page4.html'">
+        Next →
+    </button>
+
+</div>
+
+</body>
+</html>

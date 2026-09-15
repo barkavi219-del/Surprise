@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Forever 💙</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: black;
+}
+
+/* Full screen photo */
+.full-photo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+/* Music button */
+.music-button {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    padding: 13px 25px;
+    border: none;
+    border-radius: 30px;
+    
+    background: rgba(255,255,255,0.85);
+    color: #164b78;
+    font-size: 16px;
+    font-weight: bold;
+    
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.music-button:active {
+    transform: translateX(-50%) scale(0.95);
+}
+</style>
+</head>
+
+<body>
+
+<!-- YOUR PHOTO -->
+<img src="Krishan.jpg" class="full-photo" alt="Forever">
+
+<!-- SONG -->
+<audio id="lastSong">
+    <source src="lastsong.mp3" type="audio/mpeg">
+</audio>
+
+<!-- PLAY BUTTON -->
+<button class="music-button" onclick="playSong()">
+    🎵 Play Our Song 💙
+</button>
+
+<script>
+function playSong() {
+    const song = document.getElementById("lastSong");
+
+    if (song.paused) {
+        song.play();
+    } else {
+        song.pause();
+    }
+}
+</script>
+
+</body>
+</html>
